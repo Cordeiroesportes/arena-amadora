@@ -48,8 +48,8 @@ const ESTADOS_BR = [
 /* E-mails com acesso ao painel de aprovação de torneios.
    Ajuste para os e-mails reais de vocês dois antes de publicar. */
 const ADMIN_EMAILS = [
-  "seuemail@exemplo.com",
-  "emaildoseuirmao@exemplo.com"
+  "rogerio74fernando77@gmail.com",
+  "fernandonvn@gmail.com"
 ];
 
 /* ---------------------------------------------------------
