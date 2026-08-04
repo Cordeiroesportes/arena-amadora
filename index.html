@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arena Amadora — Torneios de esporte amador no Brasil</title>
+<meta name="description" content="Centralize seu cadastro de atleta ou organizador e encontre torneios amadores de futebol 4x4, vôlei, pique-bol e mais, perto de você.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#163829">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a class="marca" href="index.html"><span class="apito-ponto"></span>Arena Amadora</a>
+    <nav class="nav-links">
+      <a href="torneios.html">Torneios</a>
+      <a href="perfil.html" id="link-perfil" style="display:none;">Meu perfil</a>
+      <a href="auth.html" id="link-entrar">Entrar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container" style="display:grid; grid-template-columns: 1.2fr 1fr; gap:40px; align-items:center;">
+      <div>
+        <div class="hero-eyebrow">Apito inicial · plataforma em construção</div>
+        <h1>O esporte de várzea do Brasil, num lugar só.</h1>
+        <p class="lead">
+          Hoje, torneios amadores de futebol 4x4, vôlei, pique-bol e outras modalidades
+          se perdem em grupos de WhatsApp e posts de Instagram. A Arena Amadora
+          centraliza atletas, equipes e organizadores num único cadastro — por
+          modalidade, categoria e cidade.
+        </p>
+        <div class="hero-cta">
+          <a href="auth.html" class="btn btn-apito">Criar minha conta</a>
+          <a href="torneios.html" class="btn btn-linha">Ver torneios abertos</a>
+        </div>
+
+        <div class="placar-stats">
+          <div class="placar-stat">
+            <div class="numero">10+</div>
+            <div class="rotulo">Modalidades</div>
+          </div>
+          <div class="placar-stat">
+            <div class="numero">5</div>
+            <div class="rotulo">Categorias</div>
+          </div>
+          <div class="placar-stat">
+            <div class="numero">100%</div>
+            <div class="rotulo">Gratuito pra participar</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sumula">
+        <div class="sumula-cabecalho">
+          <div>
+            <div class="sumula-modalidade">Futebol 4x4 · Adulto</div>
+            <h3 class="sumula-nome">Copa Bairro Novo</h3>
+          </div>
+          <span class="sumula-selo selo-aprovado">Confirmado</span>
+        </div>
+        <div class="sumula-linha"><span class="rotulo">Data</span><span class="valor">17/08/2026</span></div>
+        <div class="sumula-linha"><span class="rotulo">Local</span><span class="valor">Quadra Municipal</span></div>
+        <div class="sumula-linha"><span class="rotulo">Cidade</span><span class="valor">Sete Lagoas/MG</span></div>
+        <div class="sumula-linha"><span class="rotulo">Porte</span><span class="valor">Equipes de 4x4</span></div>
+        <div class="sumula-rodape">
+          <span class="btn btn-linha" style="pointer-events:none;">Exemplo ilustrativo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container">
+      <h2 class="secao-titulo">Como funciona</h2>
+      <p class="secao-sub">Simples pra quem joga, simples pra quem organiza.</p>
+
+      <div class="grade-cartoes">
+        <div class="sumula">
+          <div class="sumula-cabecalho">
+            <div>
+              <div class="sumula-modalidade">Passo 1</div>
+              <h3 class="sumula-nome">Cadastro único</h3>
+            </div>
+          </div>
+          <p style="margin-top:6px;">
+            Atletas e representantes de equipe criam uma conta com seus dados,
+            modalidades e cidade — sem precisar reenviar isso em cada grupo de WhatsApp.
+          </p>
+        </div>
+
+        <div class="sumula">
+          <div class="sumula-cabecalho">
+            <div>
+              <div class="sumula-modalidade">Passo 2</div>
+              <h3 class="sumula-nome">Divulgação</h3>
+            </div>
+          </div>
+          <p style="margin-top:6px;">
+            Organizadores cadastram o torneio — modalidade, categoria, data, local e regras.
+            A inscrição em si continua sendo feita direto com o organizador, pelo WhatsApp informado.
+          </p>
+        </div>
+
+        <div class="sumula">
+          <div class="sumula-cabecalho">
+            <div>
+              <div class="sumula-modalidade">Passo 3</div>
+              <h3 class="sumula-nome">Ranking (em breve)</h3>
+            </div>
+          </div>
+          <p style="margin-top:6px;">
+            Conforme a base de torneios crescer, times passam a acumular
+            histórico de participação e resultado, por modalidade e categoria.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" style="background:var(--verde-quadra); color:var(--giz);">
+    <div class="container" style="text-align:center;">
+      <h2 class="secao-titulo">Bora tirar o esporte amador do WhatsApp?</h2>
+      <p style="max-width:52ch; margin:0 auto 24px; color:rgba(246,242,231,0.85);">
+        Cadastre sua equipe ou o seu próximo torneio em poucos minutos.
+      </p>
+      <a href="auth.html" class="btn btn-apito">Criar minha conta gratuita</a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">Arena Amadora — conectando o esporte de várzea no Brasil.</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("service-worker.js").catch(function () {});
+    });
+  }
+  auth.onAuthStateChanged(function (user) {
+    const linkPerfil = document.getElementById("link-perfil");
+    const linkEntrar = document.getElementById("link-entrar");
+    if (linkPerfil) linkPerfil.style.display = user ? "inline" : "none";
+    if (linkEntrar) linkEntrar.style.display = user ? "none" : "inline";
+  });
+</script>
+</body>
+</html>

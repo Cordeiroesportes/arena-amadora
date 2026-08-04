@@ -8,7 +8,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyCtwzdZPnWVuVTnnnEw_MXHX7RYEkIXf7Y",
   authDomain: "arena-amadora.firebaseapp.com",
-  databaseURL: "https://arena-amadora-default-rtdb.firebaseio.com",
+  databaseURL: "FALTA_PREENCHER", // <-- pegue esse valor na Parte 7 do guia (Realtime Database)
   projectId: "arena-amadora",
   storageBucket: "arena-amadora.firebasestorage.app",
   messagingSenderId: "169173529791",
