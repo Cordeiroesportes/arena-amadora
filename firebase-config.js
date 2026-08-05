@@ -34,8 +34,14 @@ const MODALIDADES = [
   "Vôlei de Praia",
   "Pique-bol",
   "Beach Tennis",
+  "Basquete",
   "Basquete 3x3",
-  "Handebol"
+  "Handebol",
+  "Tênis",
+  "Tênis de Mesa"
+];
+
+const GENEROS = ["Masculino", "Feminino", "Misto"];
 ];
 
 const CATEGORIAS = ["Infantil", "Juvenil", "Adulto", "Master", "Livre"];
