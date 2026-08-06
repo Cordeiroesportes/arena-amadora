@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Torneios — Arena Amadora</title>
+<meta name="description" content="Encontre torneios amadores de futebol, vôlei, pique-bol e outras modalidades perto de você.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#10142B">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a class="marca" href="index.html"><span class="apito-ponto"></span>Arena Amadora</a>
+    <nav class="nav-links">
+      <a href="torneios.html" class="ativo">Torneios</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="times.html" id="link-times" style="display:none;">Meus times</a>
+      <a href="perfil.html" id="link-perfil" style="display:none;">Meu perfil</a>
+      <a href="auth.html" id="link-entrar">Entrar</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pagina">
+  <div class="container" style="padding-top:32px;">
+
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:12px; flex-wrap:wrap; margin-bottom:20px;">
+      <div>
+        <h1 style="font-size:32px;">Torneios abertos</h1>
+        <p class="secao-sub" style="margin-bottom:0;">Filtre por modalidade, categoria e cidade.</p>
+      </div>
+      <button id="botao-novo-torneio" class="btn btn-apito" style="display:none;">+ Cadastrar torneio</button>
+    </div>
+
+    <div id="bloco-nao-logado" class="mensagem ok" style="display:block;">
+      Quer divulgar um torneio? <a href="auth.html" style="text-decoration:underline; font-weight:700;">Crie sua conta ou entre</a> para cadastrar.
+    </div>
+
+    <div class="filtros">
+      <select id="filtro-modalidade" aria-label="Filtrar por modalidade"></select>
+      <select id="filtro-genero" aria-label="Filtrar por naipe"></select>
+      <select id="filtro-categoria" aria-label="Filtrar por categoria"></select>
+      <input type="text" id="filtro-cidade" placeholder="Filtrar por cidade">
+    </div>
+
+    <!-- Formulário de novo torneio (visível apenas logado) -->
+    <div id="bloco-novo-torneio" class="form-cartao" style="display:none; max-width:720px; margin-bottom:32px;">
+      <h3 style="font-size:20px; margin-bottom:16px;">Cadastrar novo torneio</h3>
+      <div id="msg-novo-torneio" class="mensagem"></div>
+      <form id="form-torneio">
+        <div class="campo">
+          <label for="nt-nome">Nome do torneio</label>
+          <input type="text" id="nt-nome" required>
+        </div>
+        <div class="campo" style="display:flex; gap:10px;">
+          <div style="flex:1;">
+            <label for="nt-modalidade">Modalidade</label>
+            <select id="nt-modalidade" required></select>
+          </div>
+          <div style="flex:1;">
+            <label for="nt-categoria">Categoria</label>
+            <select id="nt-categoria" required></select>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="nt-genero">Naipe</label>
+          <select id="nt-genero" required></select>
+        </div>
+        <div class="campo">
+          <label for="nt-porte">Porte da equipe (ex: 4x4, times de 10)</label>
+          <input type="text" id="nt-porte" placeholder="Ex: 4x4">
+        </div>
+        <div class="campo">
+          <label for="nt-data">Data</label>
+          <input type="date" id="nt-data" required>
+        </div>
+        <div class="campo">
+          <label for="nt-local">Local (nome do espaço/quadra)</label>
+          <input type="text" id="nt-local">
+        </div>
+        <div class="campo" style="display:flex; gap:10px;">
+          <div style="flex:2;">
+            <label for="nt-cidade">Cidade</label>
+            <input type="text" id="nt-cidade">
+          </div>
+          <div style="flex:1;">
+            <label for="nt-estado">UF</label>
+            <select id="nt-estado"></select>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="nt-regras">Regras / observações</label>
+          <textarea id="nt-regras" placeholder="Ex: máximo 2 atletas federados por equipe, tempo de jogo, premiação..."></textarea>
+        </div>
+        <div class="campo">
+          <label for="nt-whatsapp">WhatsApp para inscrições (com DDD)</label>
+          <input type="tel" id="nt-whatsapp" placeholder="31900000000" required>
+        </div>
+        <p style="font-size:13px; color:var(--tinta-suave); margin-bottom:16px;">
+          O torneio fica em análise antes de aparecer publicamente na lista.
+        </p>
+        <button type="submit" class="btn btn-apito btn-bloco">Enviar para aprovação</button>
+      </form>
+    </div>
+
+    <div id="lista-torneios" class="grade-cartoes"></div>
+
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="container">Arena Amadora — conectando o esporte de várzea no Brasil.</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="torneios.js"></script>
+</body>
+</html>
