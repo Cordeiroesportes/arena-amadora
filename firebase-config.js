@@ -42,8 +42,6 @@ const MODALIDADES = [
 ];
 
 const GENEROS = ["Masculino", "Feminino", "Misto"];
-];
-
 const CATEGORIAS = ["Infantil", "Juvenil", "Adulto", "Master", "Livre"];
 
 const ESTADOS_BR = [
