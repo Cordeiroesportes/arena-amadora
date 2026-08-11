@@ -26,7 +26,6 @@ const db = firebase.database();
    --------------------------------------------------------- */
 
 const MODALIDADES = [
-  "Futebol 4x4",
   "Futebol Society",
   "Futebol de Campo",
   "Futsal",
@@ -35,7 +34,6 @@ const MODALIDADES = [
   "Pique-bol",
   "Beach Tennis",
   "Basquete",
-  "Basquete 3x3",
   "Handebol",
   "Tênis",
   "Tênis de Mesa"
