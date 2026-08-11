@@ -53,7 +53,7 @@ const ESTADOS_BR = [
    Ajuste para os e-mails reais de vocês dois antes de publicar. */
 const ADMIN_EMAILS = [
   "bolaomg@icloud.com",
-  "fernandonvn@hotmail.com"
+  "fernandonvn@gmail.com"
 ];
 
 /* ---------------------------------------------------------
