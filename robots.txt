@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin-secreto.html
+
+Sitemap: https://cordeiroesportes.github.io/arena-amadora/sitemap.xml
