@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin-secreto.html
+
+Sitemap: https://www.esportein.com.br/sitemap.xml
